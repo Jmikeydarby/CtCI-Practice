@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-register test/*"
+    "test": "mocha --compilers js:babel-register --watch test/*"
   },
   "author": "Joey Darbyshire",
   "license": "ISC",
