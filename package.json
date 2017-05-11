@@ -7,11 +7,13 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "mocha --compilers js:babel-register test/*"
   },
   "author": "Joey Darbyshire",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "chai": "^3.5.0",
     "mocha": "^3.3.0"
   }
