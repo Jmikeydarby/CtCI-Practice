@@ -4,7 +4,7 @@ import * as funcs from '../../answers/ch1/ch1-q3';
 for (let key in funcs) {
   let func = funcs[key];
 
-  describe.only('ch1-q3: ' + key, function() {
+  describe('ch1-q3: ' + key, function() {
 
     it('works with null/undefined as input', function() {
       expect(func(undefined)).to.be.undefined;
@@ -30,7 +30,7 @@ for (let key in funcs) {
 
       it(`returns true for unique string: '${arg}'`, function() {
         let expected = arg.replace(/ /g, '%20').split('');
-        expect(func(arg.split(''))).to.eql(expected);
+        expect(func(arg).split('')).to.eql(expected);
       });
 
     });
