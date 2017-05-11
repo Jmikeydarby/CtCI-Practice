@@ -1,0 +1,18 @@
+{
+  "name": "ctci_practice",
+  "version": "1.0.0",
+  "description": "Answers to the interview practice questions in Cracking the Coding Interview 6th Edition",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "Joey Darbyshire",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
