@@ -7,7 +7,6 @@ Optimize: A regex will work well here.  Make sure to remove any white space at t
 */
 
 export function urlifyWhitespace(str) {
-  console.log(str);
   if(typeof str !== "string"){
     return str;
   }
