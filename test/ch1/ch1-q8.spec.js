@@ -4,7 +4,7 @@ import * as funcs from '../../answers/ch1/ch1-q8';
 for (let key in funcs) {
   let func = funcs[key];
 
-  describe('ch1-q8: ' + key, function() {
+  describe.only('ch1-q8: ' + key, function() {
 
     it('throws an error when null/undefined/empty matrix', function() {
       expect(() => func(null)).to.throw('invalid matrix');

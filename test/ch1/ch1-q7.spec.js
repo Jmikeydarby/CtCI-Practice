@@ -10,7 +10,7 @@ function copyMatrix(matrix) {
 for (let key in funcs) {
   let func = funcs[key];
 
-  describe.only('ch1-q7: ' + key, function() {
+  describe('ch1-q7: ' + key, function() {
 
     it('throws an error when null/undefined/empty matrix', function() {
       expect(() => func(null)).to.throw('invalid matrix');
