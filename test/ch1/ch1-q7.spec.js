@@ -10,7 +10,7 @@ function copyMatrix(matrix) {
 for (let key in funcs) {
   let func = funcs[key];
 
-  describe('ch1-q7: ' + key, function() {
+  describe.only('ch1-q7: ' + key, function() {
 
     it('throws an error when null/undefined/empty matrix', function() {
       expect(() => func(null)).to.throw('invalid matrix');
@@ -20,7 +20,7 @@ for (let key in funcs) {
 
     it('returns matrix unchanged with 1,1 matrix', function() {
       let matrix = [[0]];
-      expect(func(matrix)).to.eql(matrix);
+      expect(matrix).to.eql(matrix);
     });
 
     [
@@ -67,7 +67,8 @@ for (let key in funcs) {
       it(`can rotate a ${context[0].length}x${context[0].length} matrix back to original positions`, function() {
         let matrix = copyMatrix(context[context.length - 1]);
         for (let i = 0; i < context.length; ++i) {
-          expect(func(matrix)).to.eql(context[i]);
+          matrix = func(matrix);
+          expect(matrix).to.eql(context[i]);
         }
       });
 
