@@ -4,7 +4,7 @@ import * as funcs from '../../answers/ch1/ch1-q4';
 for (let key in funcs) {
   let func = funcs[key];
 
-  describe('ch1-q4: ' + key, function() {
+  describe.only('ch1-q4: ' + key, function() {
 
     it('returns false with null/undefined as input', function() {
       expect(func(undefined)).to.be.false;
